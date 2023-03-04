@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Question from "./Question";
 const DisplayQuestions = () => {
+  // Current QuestionId
   const [questionID, setQuestionID] = useState("AreaUnderTheCurve_901");
 
+  // Array of Questions Id's
   let Questions = [
     "AreaUnderTheCurve_901",
     "BinomialTheorem_901",
@@ -32,8 +34,11 @@ const DisplayQuestions = () => {
 
   return (
     <div className="display_questions">
+      <h1 className="display_questions__heading">Mathematics Questions</h1>
       <div className="display_questions__question">
-        <Question QuestionID={questionID} />
+        <div className="display_questions__question__inner">
+          <Question QuestionID={questionID} />
+        </div>
       </div>
       <div className="display_questions__buttons">
         <button

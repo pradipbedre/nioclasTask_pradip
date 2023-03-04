@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+
 const Question = ({ QuestionID }) => {
   const [question, setQuestion] = useState(null);
   useEffect(() => {
@@ -16,11 +17,16 @@ const Question = ({ QuestionID }) => {
     };
     fetchData();
   }, [QuestionID]);
+
   // console.log(question);
   return (
     <MathJaxContext>
       <div className="question">
-        {question && <MathJax>{question[0].Question}</MathJax>}
+        {question && question ? (
+          <MathJax>{question[0].Question}</MathJax>
+        ) : (
+          <p>Questions Not Found...</p>
+        )}
       </div>
     </MathJaxContext>
   );
