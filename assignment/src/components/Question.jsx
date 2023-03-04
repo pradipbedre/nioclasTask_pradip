@@ -25,7 +25,7 @@ const Question = ({ QuestionID }) => {
         {question && question ? (
           <MathJax>{question[0].Question}</MathJax>
         ) : (
-          <p>Questions Not Found...</p>
+          <p>Loading...</p>
         )}
       </div>
     </MathJaxContext>
