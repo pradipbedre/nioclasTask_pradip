@@ -1,9 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Global CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App{
-    
+.App {
+}
+
+/* DisplayQuestions Component Css  */
+.display_questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.display_questions__question {
+  margin-top: 20vh;
+}
+.display_questions__buttons {
+  margin-top: 20vh;
+  display: flex;
+  gap: 100px;
+}
+.display_questions__buttons__previous {
+  padding: 10px;
+  background-color: rgb(222, 169, 10);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: medium;
+  width: 100px;
+}
+.display_questions__buttons__previous:hover {
+  background-color: rgb(202, 154, 9);
+}
+.display_questions__buttons__next {
+  padding: 10px;
+  background-color: rgb(222, 169, 10);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: medium;
+  width: 100px;
+}
+.display_questions__buttons__next:hover {
+  background-color: rgb(202, 154, 9);
 }

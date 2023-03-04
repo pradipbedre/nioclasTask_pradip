@@ -1,5 +1,6 @@
 import React from "react";
 import DisplayQuestions from "./components/DisplayQuestions";
+import "./App.css";
 
 const App = () => {
   return (
