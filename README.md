@@ -1,7 +1,7 @@
 # nioclasTask_pradip
 nioclas interview assignment
 
-## Live: https://nioclas-task-pradip.netlify.app/
+### Live: https://codesandbox.io/s/nioclastask-pradip-piw3fm?file=/src/App.css
 
 ## Installation
 
